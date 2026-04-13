@@ -1,0 +1,39 @@
+.about {
+    position: relative;
+    padding-top: 320px;
+}
+
+.about_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    position: relative;
+}
+
+.about_content {
+    max-width: 901px;
+    position: relative;
+    z-index: 2;
+}
+
+.about_title {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 385px;
+    text-transform: uppercase;
+}
+
+.about_desc {
+    font-size: 18px;
+    max-width: 513px;
+}
+
+.about_image {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    /* опускає вниз як у макеті */
+    z-index: 1;
+    width: 592px;
+}

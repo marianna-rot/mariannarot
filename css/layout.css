@@ -56,7 +56,7 @@ html {
 body {
     color: var(--txt-primary-color);
     font-family: var(--body-font);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.125rem;
     line-height: 30px;
     background: var(--bg-color-01);
@@ -70,7 +70,6 @@ h4,
 h5 {
 
     font-family: "Golos Text", sans-serif;
-    font-weight: 800;
     margin: 0;
 }
 
@@ -80,14 +79,16 @@ h1 {
     font-size: 20vw;
     line-height: 0.8;
     margin-bottom: 15px;
+    font-weight: 800;
 }
 
 h2 {
-    font-size: 7.5rem;
+    font-size: 5.3rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 h4 {
