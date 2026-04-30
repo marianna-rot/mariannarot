@@ -1,0 +1,52 @@
+.footer {
+    background-color: var(--bg-color-02);
+    color: var(--bg-color-01);
+
+
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1.07px;
+
+}
+
+
+
+.footer-column {
+    max-width: 40rem;
+}
+
+
+
+.footer__column h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+}
+
+.footer__p {
+    line-height: 2;
+}
+
+
+
+.contacts {
+    margin-top: 6.6rem;
+    line-height: 2;
+}
+
+.socials {
+    margin-top: 6.6rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.socials a {
+    opacity: 0.8;
+    transition: 0.3;
+}
+
+.socials a:hover {
+    opacity: 1;
+}

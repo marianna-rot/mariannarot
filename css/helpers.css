@@ -1,0 +1,7 @@
+.text_center {
+    text-align: center;
+}
+
+.white_text {
+    color: var(--bg-color-01);
+}

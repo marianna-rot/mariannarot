@@ -1,124 +1,67 @@
-:root {
-    --txt-primary-color: #000;
-    /*колір основного тексту*/
-    --txt-secondary-color: #fff;
-    /*колір основного тексту інверсія*/
-
-    --body-font: "Inter", sans-serif;
-    /*шрифт для основного тексту*/
-    --h-font: "Golos Tetx", sans-serif;
-    /*шрифт для заголовків*/
-    --button-font: "Source Sans 3", sans-serif;
-    /*шрифт для кнопок*/
-
-
-    --bg-color-01: #E8E8E8;
-    /*фон*/
-    --bg-color-02: #000;
-    --navbar-bg-color: #DBDBDB;
-
-    --link-color-01: rgb(0, 0, 0);
-
-    --btn-primary-color: #ffffff;
-    /*колір основних конопок*/
-    --btn-secondary-color: transparent;
-    /*колір другорядних кнопок*/
-    --color-border: #111;
-    /*колір обведення*/
-
-    --radius-sm: 10px;
-    /*маленький радіус скруглення*/
-    --radius-lg: 30px;
-    /*великий радіус скруглення*/
-
-    --container-width: 1200px;
-    /*ширина контейнера*/
-
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
-    /*тінь*/
-
-    --mob-padding: 20px;
-    /*відступи до контенту на телефоні*/
-    --max-width: 1380px;
-    /*обмеження для пк*/
-    --ipad-padding: 50px;
-    --ver-pad-desktop: 50px;
-    /* відступи по вертикалі у секціях desktop */
-    --ver-pad-mob: 25px;
-    /* відступи по вертикалі у секціях mobile */
+.container {
+    width: 100;
+    max-width: 1410px;
+    padding: 0.3rem;
+    margin: 0 auto;
 }
 
-html {
-    font-size: 16px;
-}
-
-
-body {
-    color: var(--txt-primary-color);
-    font-family: var(--body-font);
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 30px;
-    background: var(--bg-color-01);
+.header {
+    padding: 3rem 8.2rem;
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    font-family: "Golos Text", sans-serif;
-    margin: 0;
+.header__list {
+    display: flex;
+    gap: 6rem;
 }
 
 
 
-h1 {
-    font-size: 20vw;
-    line-height: 0.8;
-    margin-bottom: 15px;
-    font-weight: 800;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-bottom: 7.2rem;
 }
 
-h2 {
-    font-size: 5.3rem;
-    font-weight: 700;
-}
 
-h3 {
-    font-size: 4rem;
-}
-
-h4 {
-    font-size: 4rem;
-}
-
-h5 {
-    font-size: 7vw;
-    font-weight: 500;
-
+.section {
+    padding: 9rem 0 9rem;
 }
 
 
 
 
 
-section,
-footer {
-    padding-top: var(--ver-pad-desktop);
-    padding-bottom: var(--ver-pad-desktop);
+.footer {
+    padding: 0.4rem 0 13.5rem;
+
+
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1458px;
+    margin: 0 auto;
+    gap: 18.7rem;
+    flex-wrap: wrap;
+
+
 }
 
 
 
-@media screen and (max-width: 1900px) {
-
-
-
-    .inside {
-        padding-left: var(--mob-padding);
-        padding-right: var(--mob-padding);
-    }
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,147 @@
+@import "helpers.css";
+@import "section.css";
+@import "info.css";
+@import "attribute-list.css";
+@import "footer.css";
+@import "layout.css";
+@import "hero.css";
+@import "about.css";
+@import "normalize.css";
+@import "header.css";
+
+
+
+
+
+:root {
+    --txt-color-01: #000;
+    /*колір основного тексту*/
+    --txt-color-02: #fff;
+    /*колір основного тексту інверсія*/
+    --txt-color-03: #404040;
+
+    --txt-body-font: "Inter", sans-serif;
+    /*шрифт для основного тексту*/
+    --h-font: "Golos Tetx", sans-serif;
+    /*шрифт для заголовків*/
+
+
+    --bg-color-01: #E8E8E8;
+    /*фон*/
+    --bg-color-02: #000;
+    --bg-color-03: #DBDBDB;
+
+
+
+    --btn-primary-color: #ffffff;
+    /*колір основних конопок*/
+    --btn-secondary-color: transparent;
+    /*колір другорядних кнопок*/
+    --color-border: #111;
+    /*колір обведення*/
+
+    --radius-sm: 28px;
+    /*маленький радіус скруглення*/
+    --radius-lg: 44px;
+    /*великий радіус скруглення*/
+
+    --container-width: 1251px;
+    /*ширина контейнера*/
+
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+    /*тінь*/
+
+    --mob-padding: 20px;
+    /*відступи до контенту на телефоні*/
+    --max-width: 1380px;
+    /*обмеження для пк*/
+    --ipad-padding: 50px;
+    --ver-pad-desktop: 50px;
+    /* відступи по вертикалі у секціях desktop */
+    --ver-pad-mob: 25px;
+    /* відступи по вертикалі у секціях mobile */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.4rem;
+    color: var(--txt-color-01);
+
+    background-color: var(--bg-color-01);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Golos Text' sans-serif;
+}
+
+a {
+    color: var(--txt-color-01);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.btn {
+
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+
+    background: var(--btn-secondary-color);
+    border-radius: var(--radius-lg);
+    border: 2px solid #717171;
+    padding: 0px 30px;
+
+    transition: background 0.3s;
+
+}
+
+.btn:hover {
+    background: var(--bg-color-01);
+}
+
+.btn_icon {
+    width: 2rem;
+    height: 2.7rem;
+
+    margin-left: 1.4rem;
+}
+
+.dark {
+
+
+    background-color: var(--bg-color-01);
+    padding: 0 6rem;
+
+    transition: background 0.3s;
+
+}
+
+.dark:hover {
+    background: var(--bg-color-03);
+}

@@ -1,0 +1,38 @@
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.info--reverse {
+    flex-direction: row-reverse;
+
+}
+
+.info__content {
+
+    max-width: 684px;
+
+}
+
+.info__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.info__title {
+    margin-bottom: 4rem;
+
+    font-size: 6.4rem;
+    line-height: 6.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+}
+
+.info__text {
+    line-height: 4rem;
+}
