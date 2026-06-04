@@ -1,0 +1,146 @@
+.quote-section {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    padding: 10rem 0;
+}
+
+.quote-container {
+    position: relative;
+    min-height: 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-title {
+    position: relative;
+    z-index: 2;
+
+    max-width: 90rem;
+
+    color: #fff;
+    font-size: 7.2rem;
+    line-height: 1.12;
+    font-weight: 800;
+    text-align: left;
+}
+
+.quote-cig {
+    position: absolute;
+    z-index: 1;
+
+    width: 70rem;
+    height: auto;
+
+    pointer-events: none;
+}
+
+.quote-cig-left {
+    left: -53rem;
+    top: 5%;
+    transform: translateY(-50%) rotate(-28deg);
+}
+
+.quote-cig-right {
+    right: -53rem;
+    top: 5%;
+    transform: translateY(-50%) rotate(-20deg);
+}
+
+
+
+
+/* QUOTE ADAPTIVE */
+
+@media (max-width: 1024px) {
+    .quote-section {
+        padding: 8rem 0;
+    }
+
+    .quote-container {
+        min-height: 40rem;
+    }
+
+    .quote-title {
+        max-width: 70rem;
+        font-size: 5.6rem;
+    }
+
+    .quote-cig {
+        width: 50rem;
+    }
+
+    .quote-cig-left {
+        left: -23rem;
+
+    }
+
+    .quote-cig-right {
+        right: -25rem;
+        top: -40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 6rem 0;
+    }
+
+    .quote-container {
+        min-height: 30rem;
+    }
+
+    .quote-title {
+        max-width: 100%;
+        font-size: 4.6rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .quote-cig {
+        width: 38rem;
+        opacity: 0.6;
+    }
+
+    .quote-cig-left {
+        left: -16rem;
+        top: 10%;
+    }
+
+    .quote-cig-right {
+        right: -20rem;
+        top: -50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-section {
+        padding: 5rem 0;
+    }
+
+    .quote-container {
+        min-height: 24rem;
+    }
+
+    .quote-title {
+        font-size: 2.8rem;
+        line-height: 1.25;
+        padding: 0 2rem;
+    }
+
+    .quote-cig {
+        width: 22rem;
+        opacity: 0.4;
+    }
+
+    .quote-cig-left {
+        left: -9rem;
+        top: 20%;
+    }
+
+    .quote-cig-right {
+        right: -10rem;
+        top: -20%;
+    }
+}

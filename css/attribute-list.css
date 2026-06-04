@@ -3,6 +3,12 @@
     row-gap: 18rem;
     flex-wrap: wrap;
     margin: 12rem 0 18.7rem;
+    justify-content: center;
+
+    padding: 0;
+    list-style: none;
+
+
 }
 
 .attribute__list__item {
@@ -11,10 +17,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    cursor: pointer;
+    transition: transform 0.35s ease;
 }
 
 .attribute__list__icon {
     display: block;
+    transition: transform 0.35s ease;
+
+
 }
 
 .attribute__list__title {
@@ -22,4 +34,96 @@
     font-size: 3.2rem;
     color: var(--bg-color-01);
     font-weight: 700;
+
+    transition: transform 0.35s ease;
+}
+
+
+.attribute__list__item:hover {
+    transform: scale(1.12);
+}
+
+.attribute__list__item:hover .attribute__list__icon {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.attribute__list__item:hover .attribute__list__title {
+    transform: translateY(0.8rem);
+}
+
+
+/* ATTRIBUTE ADAPTIVE */
+
+/* tablet */
+@media (max-width: 900px) {
+    .attribute__list {
+        row-gap: 10rem;
+        margin: 8rem 0 12rem;
+    }
+
+    .attribute__list__item {
+        flex: 0 0 50%;
+    }
+
+    .attribute__list__title {
+        margin-top: 2.4rem;
+        font-size: 2.6rem;
+    }
+
+    .attribute__list__icon {
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+}
+
+/* phone */
+@media (max-width: 630px) {
+    .attribute__list {
+        display: grid;
+        grid-template-columns: repeat(2, 12rem);
+        justify-content: center;
+        justify-items: center;
+
+        column-gap: 4rem;
+        row-gap: 6rem;
+
+        margin: 6rem auto 9rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    .attribute__list__item {
+        width: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .attribute__list__icon {
+        width: 4.4rem;
+        height: 4.4rem;
+        object-fit: contain;
+    }
+
+    .attribute__list__title {
+        width: 12rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-top: 1.6rem;
+    }
+}
+
+/* very small phone */
+@media (max-width: 390px) {
+    .attribute__list {
+        column-gap: 1.2rem;
+        row-gap: 4.8rem;
+    }
+
+
+
+    .attribute__list__title {
+        font-size: 1.6rem;
+    }
 }

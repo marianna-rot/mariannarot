@@ -3,12 +3,6 @@
 @import "info.css";
 @import "attribute-list.css";
 @import "footer.css";
-@import "layout.css";
-@import "hero.css";
-@import "about.css";
-@import "normalize.css";
-@import "header.css";
-
 
 
 
@@ -29,7 +23,8 @@
     --bg-color-01: #E8E8E8;
     /*фон*/
     --bg-color-02: #000;
-    --bg-color-03: #DBDBDB;
+    --bg-color-03: #EDEDEA;
+    --bg-color-04: #B7B7B7;
 
 
 
@@ -76,9 +71,14 @@ body {
     font-style: normal;
     font-size: 2.4rem;
     color: var(--txt-color-01);
+    overflow-x: hidden;
 
     background-color: var(--bg-color-01);
 
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -101,6 +101,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+
+
 
 
 

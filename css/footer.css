@@ -1,52 +1,217 @@
-.footer {
+.footer-cta {
+    min-height: 100vh;
+
+    padding: 4rem 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--bg-color-02);
-    color: var(--bg-color-01);
 
-
-    font-size: 2rem;
-    font-weight: 200;
-    letter-spacing: 1.07px;
-
+    overflow: hidden;
 }
 
+.footer-cta__content {
+    position: relative;
+    z-index: 2;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.footer-column {
-    max-width: 40rem;
+    flex: 1;
 }
 
+.footer-cta__title {
+    margin-bottom: 2.5rem;
 
-
-.footer__column h3 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 7.5rem;
+    font-weight: 800;
     text-transform: uppercase;
 
+    position: relative;
+    z-index: 3;
 }
 
-.footer__p {
-    line-height: 2;
-}
-
-
-
-.contacts {
-    margin-top: 6.6rem;
-    line-height: 2;
-}
-
-.socials {
-    margin-top: 6.6rem;
+.footer-cta__btn {
     display: flex;
-    gap: 2.5rem;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 30rem;
+    height: 6.4rem;
+
+    border-radius: 999px;
+
+    background: #fff;
+    color: #000;
+
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    z-index: 3;
 }
 
-.socials a {
-    opacity: 0.8;
-    transition: 0.3;
+.footer-cta__btn:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 40px rgba(255, 255, 255, 0.15);
 }
 
-.socials a:hover {
-    opacity: 1;
+.footer-bottle {
+    position: absolute;
+    z-index: 1;
+
+    width: 45rem;
+    height: auto;
+
+    opacity: 0.85;
+
+    filter:
+        blur(8px) drop-shadow(0 0 25px rgba(74, 255, 74, 0.3));
+
+    pointer-events: none;
+}
+
+
+
+.footer-bottle-left {
+    left: 12rem;
+    top: 58%;
+    transform: translateY(-50%) rotate(-14deg);
+}
+
+.footer-bottle-right {
+    right: 10rem;
+    top: 52%;
+    transform: translateY(-50%) rotate(14deg);
+}
+
+.footer-credits {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* FOOTER ADAPTIVE */
+
+@media (max-width: 1024px) {
+    .footer-cta {
+        padding: 4rem;
+        min-height: 80vh;
+    }
+
+    .footer-cta__title {
+        font-size: 6rem;
+    }
+
+    .footer-bottle {
+        width: 34rem;
+    }
+
+    .footer-bottle-left {
+        left: 3rem;
+        top: 58%;
+    }
+
+    .footer-bottle-right {
+        right: 3rem;
+        top: 54%;
+    }
+
+    .footer-credits {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-cta {
+        padding: 3rem 2rem;
+        min-height: 70vh;
+    }
+
+    .footer-cta__title {
+        font-size: 4.8rem;
+        text-align: center;
+    }
+
+    .footer-cta__btn {
+        width: 24rem;
+        height: 5.6rem;
+        font-size: 1.6rem;
+    }
+
+    .footer-bottle {
+        width: 34rem;
+        opacity: 0.55;
+        filter: blur(6px) drop-shadow(0 0 18px rgba(74, 255, 74, 0.25));
+    }
+
+    .footer-bottle-left {
+        left: 4rem;
+        top: 55%;
+    }
+
+    .footer-bottle-right {
+        right: 3rem;
+        top: 55%;
+    }
+
+    .footer-credits {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-cta {
+        min-height: 60vh;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footer-cta__title {
+        font-size: 2.6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .footer-cta__btn {
+        width: 50%;
+        max-width: 24rem;
+        height: 5.2rem;
+        font-size: 1.4rem;
+    }
+
+    .footer-bottle {
+        width: 28rem;
+        opacity: 0.45;
+    }
+
+    .footer-bottle-left {
+        left: -3rem;
+        top: 58%;
+    }
+
+    .footer-bottle-right {
+        right: -4rem;
+        top: 48%;
+    }
+
+    .footer-credits {
+
+        gap: 0.8rem;
+        font-size: 1.4rem;
+    }
 }

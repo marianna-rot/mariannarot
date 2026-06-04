@@ -12,27 +12,203 @@
 
 .info__content {
 
-    max-width: 684px;
-
+    max-width: 600px;
+    flex: 0 0 50%
 }
 
 .info__photo {
-    display: block;
-    max-width: 100%;
+
+    max-width: 520px;
+    flex: 0 0 50%;
     height: auto;
     margin: 0;
+    overflow: hidden;
 }
 
 .info__title {
     margin-bottom: 4rem;
 
-    font-size: 6.4rem;
-    line-height: 6.8rem;
+    font-size: 4.4rem;
+    line-height: 5rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2%;
 }
 
 .info__text {
-    line-height: 4rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
+}
+
+
+
+.bottles-hover {
+    max-width: 520px;
+    cursor: pointer;
+}
+
+.bottles-video {
+    width: 110%;
+    display: block;
+    height: auto;
+    clip-path: inset(0 0 4px 0);
+}
+
+
+
+.cig-photo img {
+
+    animation: cig-breathe 4s ease-in-out infinite;
+    transform-origin: center center;
+
+
+}
+
+
+
+
+@keyframes cig-breathe {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.08) rotate(-4deg);
+    }
+}
+
+.cig-photo {
+    overflow: visible;
+    display: inline-block;
+}
+
+
+.bottles-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.bottles-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+
+
+
+
+/* INFO ADAPTIVE */
+
+@media (max-width: 1024px) {
+    .info {
+        gap: 3rem;
+        padding: 0 5rem;
+    }
+
+    .info__content {
+        max-width: 40%;
+        flex: none;
+        text-align: left;
+
+    }
+
+    .info__title {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .info__text {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .info__photo {
+        max-width: 42rem;
+        flex: 0 0 50%
+    }
+}
+
+
+
+
+
+/* MOBILE */
+@media (max-width: 630px) {
+
+    .info,
+    .info--reverse {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .info__content {
+        max-width: 80%;
+        flex: none;
+        text-align: left;
+    }
+
+    .info__title {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .info__text {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .info__content .btn {
+        margin-top: 3rem;
+    }
+
+    .info__photo {
+        width: 100%;
+        max-width: 34rem;
+        flex: none;
+    }
+
+    .bottles-hover {
+        max-width: 34rem;
+    }
+
+    .bottles-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .cig-photo img {
+        width: 50%;
+
+
+
+
+
+    }
+
+    .info__photo,
+    .bottles-hover {
+        max-width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 390px) {
+    .info__title {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+    .info__text {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+
 }

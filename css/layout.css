@@ -1,12 +1,12 @@
 .container {
-    width: 100;
-    max-width: 1410px;
+    width: 100%;
+    max-width: 1051px;
     padding: 0.3rem;
     margin: 0 auto;
 }
 
 .header {
-    padding: 3rem 8.2rem;
+    padding: 2rem 8.2rem;
 
 }
 
@@ -20,45 +20,6 @@
     display: flex;
     gap: 6rem;
 }
-
-
-
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding-bottom: 7.2rem;
-}
-
-
-.section {
-    padding: 9rem 0 9rem;
-}
-
-
-
-
-
-.footer {
-    padding: 0.4rem 0 13.5rem;
-
-
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1458px;
-    margin: 0 auto;
-    gap: 18.7rem;
-    flex-wrap: wrap;
-
-
-}
-
-
 
 .btn {
     display: inline-flex;

@@ -1,9 +1,13 @@
+.section {
+    padding: 9rem 0 9rem;
+}
+
 .join__section {
     padding: 13.7rem 0 32.8rem;
 }
 
 .section--gray {
-    background-color: var(--bg-color-03);
+    background-color: var(--bg-color-04);
 
 
 }
@@ -20,35 +24,11 @@
 
 }
 
-
-
-.input__section {
-    padding: 20rem 0 25rem;
-}
-
-.input__title {
-    font-size: 5rem;
-    font-weight: 500;
-    letter-spacing: 0.67px;
-    text-transform: uppercase;
-    margin-bottom: 8.4rem;
-}
-
-.input__form {
-    display: flex;
-    justify-content: center;
-    gap: 6.4rem;
-    flex-wrap: wrap;
-}
-
-.input__form input {
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 37.3px;
-    padding: 16px 26px;
-    width: 44.8rem;
+.section--light .btn:hover {
+    background: #000;
     color: #fff;
-    font-size: 2.4rem;
-    letter-spacing: 0.67;
-    outline: none;
+}
+
+.section--light .btn:hover .btn_icon {
+    filter: invert(1);
 }

@@ -1,8 +1,6 @@
 *,
-*::after *::before {
+*::before,
+*::after {
     box-sizing: border-box;
-    margin: 0;
-    /*Зовнішні відступи*/
-    padding: 0;
-    /*Внутрішні відступи*/
+
 }
